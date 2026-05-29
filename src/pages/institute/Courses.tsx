@@ -11,9 +11,7 @@ import {
 import { Link } from 'react-router-dom';
 import { courses, CourseCategory, CertLevel } from '../../data/courses';
 const categories: CourseCategory[] = [
-'O/L',
-'A/L',
-'External Degrees',
+'BIT',
 'Certificates'];
 
 const certLevels: (CertLevel | 'All')[] = [
@@ -23,7 +21,7 @@ const certLevels: (CertLevel | 'All')[] = [
 'Advanced'];
 
 export const InstituteCourses: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<CourseCategory>('O/L');
+  const [activeTab, setActiveTab] = useState<CourseCategory>('BIT');
   const [activeCertLevel, setActiveCertLevel] = useState<CertLevel | 'All'>(
     'All'
   );
