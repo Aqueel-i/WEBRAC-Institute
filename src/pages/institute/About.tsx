@@ -276,7 +276,7 @@ export const InstituteAbout: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-violet-500 to-cyan-500 p-1 mb-8">
             <div className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center border-4 border-slate-900">
-              <span className="text-2xl font-bold text-white">DR</span>
+              <span className="text-2xl font-bold text-white">WEBRAC</span>
             </div>
           </div>
           <blockquote className="text-2xl md:text-3xl font-medium text-white leading-relaxed mb-8">
