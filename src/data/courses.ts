@@ -1,4 +1,4 @@
-export type CourseCategory = 'BIT' | 'Certificates';
+export type CourseCategory = 'BIT' | 'Certificate Courses';
 export type CertLevel = 'Entry Level' | 'Intermediate' | 'Advanced';
 
 export interface Course {
@@ -40,7 +40,7 @@ export const courses: Course[] = [
   {
     id: 'c6',
     title: 'Introduction to Web Development',
-    category: 'Certificates',
+    category: 'Certificate Courses',
     certLevel: 'Entry Level',
     duration: '3 months',
     lecturer: 'Robert Fox',
@@ -52,7 +52,7 @@ export const courses: Course[] = [
   {
     id: 'c7',
     title: 'Advanced React Patterns',
-    category: 'Certificates',
+    category: 'Certificate Courses',
     certLevel: 'Advanced',
     duration: '4 months',
     lecturer: 'Robert Fox',
@@ -64,7 +64,7 @@ export const courses: Course[] = [
   {
     id: 'c8',
     title: 'Cybersecurity Fundamentals',
-    category: 'Certificates',
+    category: 'Certificate Courses',
     certLevel: 'Intermediate',
     duration: '6 months',
     lecturer: 'Dr. Anita Patel',
@@ -76,7 +76,7 @@ export const courses: Course[] = [
   {
     id: 'c9',
     title: 'Digital Marketing Essentials',
-    category: 'Certificates',
+    category: 'Certificate Courses',
     certLevel: 'Entry Level',
     duration: '2 months',
     lecturer: 'Lisa Thompson',

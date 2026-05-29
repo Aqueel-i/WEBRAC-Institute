@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 import { courses, CourseCategory, CertLevel } from '../../data/courses';
 const categories: CourseCategory[] = [
 'BIT',
-'Certificates'];
+'Certificate Courses'];
 
 const certLevels: (CertLevel | 'All')[] = [
 'All',
@@ -29,7 +29,7 @@ export const InstituteCourses: React.FC = () => {
   const filteredCourses = useMemo(() => {
     return courses.filter((course) => {
       if (course.category !== activeTab) return false;
-      if (activeTab === 'Certificates' && activeCertLevel !== 'All') {
+      if (activeTab === 'Certificate Courses' && activeCertLevel !== 'All') {
         if (course.certLevel !== activeCertLevel) return false;
       }
       if (searchQuery) {
@@ -82,7 +82,7 @@ export const InstituteCourses: React.FC = () => {
 
           {/* Certificate Filters (Only visible when Certificates tab is active) */}
           <AnimatePresence>
-            {activeTab === 'Certificates' &&
+            {activeTab === 'Certificate Courses' &&
             <motion.div
               initial={{
                 opacity: 0,
