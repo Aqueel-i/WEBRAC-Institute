@@ -6,40 +6,41 @@ import {
   Heart,
   CheckCircle2,
   Linkedin,
-  Twitter } from
-'lucide-react';
+  Twitter
+} from
+  'lucide-react';
 import { lecturers, staff } from '../../data/lecturers';
 const timeline = [
-{
-  year: '1995',
-  title: 'Founded',
-  description:
-  'WEBRAC Institute was established with a vision to provide quality IT education.'
-},
-{
-  year: '2005',
-  title: 'Campus Expansion',
-  description:
-  'Opened our new state-of-the-art campus in the heart of the city.'
-},
-{
-  year: '2015',
-  title: 'International Accreditation',
-  description:
-  'Received global recognition and partnered with leading international universities.'
-},
-{
-  year: '2020',
-  title: 'Digital Campus',
-  description:
-  'Launched our comprehensive online learning platform and virtual labs.'
-},
-{
-  year: '2026',
-  title: 'Today',
-  description:
-  'Leading the way in modern tech education with over 12,000 active students.'
-}];
+  {
+    year: '1995',
+    title: 'Founded',
+    description:
+      'WEBRAC Institute was established with a vision to provide quality IT education.'
+  },
+  {
+    year: '2005',
+    title: 'Campus Expansion',
+    description:
+      'Opened our new state-of-the-art campus in the heart of the city.'
+  },
+  {
+    year: '2015',
+    title: 'International Accreditation',
+    description:
+      'Received global recognition and partnered with leading international universities.'
+  },
+  {
+    year: '2020',
+    title: 'Digital Campus',
+    description:
+      'Launched our comprehensive online learning platform and virtual labs.'
+  },
+  {
+    year: '2026',
+    title: 'Today',
+    description:
+      'Leading the way in modern tech education with over 12,000 active students.'
+  }];
 
 export const InstituteAbout: React.FC = () => {
   return (
@@ -59,7 +60,7 @@ export const InstituteAbout: React.FC = () => {
               ease: 'linear'
             }}
             className="absolute top-[-20%] right-[-10%] w-[50vw] h-[50vw] max-w-[600px] max-h-[600px] rounded-full bg-violet-600/30 blur-[100px]" />
-          
+
           <motion.div
             animate={{
               x: [0, -20, 0],
@@ -71,7 +72,7 @@ export const InstituteAbout: React.FC = () => {
               ease: 'linear'
             }}
             className="absolute bottom-[-20%] left-[-10%] w-[40vw] h-[40vw] max-w-[500px] max-h-[500px] rounded-full bg-cyan-500/30 blur-[100px]" />
-          
+
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1
@@ -84,7 +85,7 @@ export const InstituteAbout: React.FC = () => {
               y: 0
             }}
             className="text-4xl md:text-5xl font-bold text-white mb-6">
-            
+
             About{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400">
               WEBRAC Institute
@@ -103,7 +104,7 @@ export const InstituteAbout: React.FC = () => {
               delay: 0.1
             }}
             className="text-lg text-slate-300 max-w-2xl mx-auto">
-            
+
             Empowering the next generation of tech leaders through innovative
             education and industry-aligned programs.
           </motion.p>
@@ -115,57 +116,57 @@ export const InstituteAbout: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-            {
-              icon: Eye,
-              title: 'Our Vision',
-              desc: 'To be the premier institution for technology education, recognized globally for excellence and innovation.',
-              color: 'text-violet-600',
-              bg: 'bg-violet-50'
-            },
-            {
-              icon: Target,
-              title: 'Our Mission',
-              desc: 'To provide accessible, high-quality education that equips students with the skills needed to thrive in the digital economy.',
-              color: 'text-cyan-600',
-              bg: 'bg-cyan-50'
-            },
-            {
-              icon: Heart,
-              title: 'Core Values',
-              desc: 'Excellence, Innovation, Integrity, Inclusivity, and Lifelong Learning form the foundation of everything we do.',
-              color: 'text-pink-600',
-              bg: 'bg-pink-50'
-            }].
-            map((item, i) =>
-            <motion.div
-              key={item.title}
-              initial={{
-                opacity: 0,
-                y: 20
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0
-              }}
-              viewport={{
-                once: true
-              }}
-              transition={{
-                delay: i * 0.1
-              }}
-              className="p-8 rounded-3xl bg-white/70 backdrop-blur-xl border border-slate-200 shadow-sm hover:shadow-lg transition-all">
-              
-                <div
-                className={`w-14 h-14 rounded-2xl ${item.bg} flex items-center justify-center mb-6`}>
-                
-                  <item.icon className={`w-7 h-7 ${item.color}`} />
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-slate-600 leading-relaxed">{item.desc}</p>
-              </motion.div>
-            )}
+              {
+                icon: Eye,
+                title: 'Our Vision',
+                desc: 'To be the premier institution for technology education, recognized globally for excellence and innovation.',
+                color: 'text-violet-600',
+                bg: 'bg-violet-50'
+              },
+              {
+                icon: Target,
+                title: 'Our Mission',
+                desc: 'To provide accessible, high-quality education that equips students with the skills needed to thrive in the digital economy.',
+                color: 'text-cyan-600',
+                bg: 'bg-cyan-50'
+              },
+              {
+                icon: Heart,
+                title: 'Core Values',
+                desc: 'Excellence, Innovation, Integrity, Inclusivity, and Lifelong Learning form the foundation of everything we do.',
+                color: 'text-pink-600',
+                bg: 'bg-pink-50'
+              }].
+              map((item, i) =>
+                <motion.div
+                  key={item.title}
+                  initial={{
+                    opacity: 0,
+                    y: 20
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0
+                  }}
+                  viewport={{
+                    once: true
+                  }}
+                  transition={{
+                    delay: i * 0.1
+                  }}
+                  className="p-8 rounded-3xl bg-white/70 backdrop-blur-xl border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+
+                  <div
+                    className={`w-14 h-14 rounded-2xl ${item.bg} flex items-center justify-center mb-6`}>
+
+                    <item.icon className={`w-7 h-7 ${item.color}`} />
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-slate-600 leading-relaxed">{item.desc}</p>
+                </motion.div>
+              )}
           </div>
         </div>
       </section>
@@ -184,35 +185,35 @@ export const InstituteAbout: React.FC = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-            'Industry-recognized certifications',
-            'State-of-the-art computer labs',
-            'Experienced faculty from the tech industry',
-            'Dedicated career placement assistance',
-            'Flexible learning schedules',
-            'Modern digital learning platform'].
-            map((point, i) =>
-            <motion.div
-              key={i}
-              initial={{
-                opacity: 0,
-                x: -20
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0
-              }}
-              viewport={{
-                once: true
-              }}
-              transition={{
-                delay: i * 0.1
-              }}
-              className="flex items-start gap-4 p-4">
-              
-                <CheckCircle2 className="w-6 h-6 text-cyan-500 flex-shrink-0 mt-0.5" />
-                <span className="text-slate-700 font-medium">{point}</span>
-              </motion.div>
-            )}
+              'Industry-recognized certifications',
+              'State-of-the-art computer labs',
+              'Experienced faculty from the tech industry',
+              'Dedicated career placement assistance',
+              'Flexible learning schedules',
+              'Modern digital learning platform'].
+              map((point, i) =>
+                <motion.div
+                  key={i}
+                  initial={{
+                    opacity: 0,
+                    x: -20
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 0
+                  }}
+                  viewport={{
+                    once: true
+                  }}
+                  transition={{
+                    delay: i * 0.1
+                  }}
+                  className="flex items-start gap-4 p-4">
+
+                  <CheckCircle2 className="w-6 h-6 text-cyan-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-700 font-medium">{point}</span>
+                </motion.div>
+              )}
           </div>
         </div>
       </section>
@@ -230,28 +231,28 @@ export const InstituteAbout: React.FC = () => {
             <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-violet-600 via-pink-500 to-cyan-500 rounded-full transform md:-translate-x-1/2 opacity-20" />
 
             {timeline.map((item, i) =>
-            <motion.div
-              key={item.year}
-              initial={{
-                opacity: 0,
-                y: 20
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0
-              }}
-              viewport={{
-                once: true
-              }}
-              className={`relative flex items-center justify-between mb-12 md:mb-24 ${i % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
-              
+              <motion.div
+                key={item.year}
+                initial={{
+                  opacity: 0,
+                  y: 20
+                }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0
+                }}
+                viewport={{
+                  once: true
+                }}
+                className={`relative flex items-center justify-between mb-12 md:mb-24 ${i % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+
                 {/* Timeline Dot */}
                 <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-violet-600 shadow-[0_0_15px_rgba(139,92,246,0.6)] transform -translate-x-[6px] md:-translate-x-1/2 z-10" />
 
                 {/* Content Card */}
                 <div
-                className={`ml-12 md:ml-0 w-full md:w-[45%] ${i % 2 === 0 ? 'md:text-left' : 'md:text-right'}`}>
-                
+                  className={`ml-12 md:ml-0 w-full md:w-[45%] ${i % 2 === 0 ? 'md:text-left' : 'md:text-right'}`}>
+
                   <div className="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
                     <span className="inline-block px-3 py-1 rounded-full bg-violet-100 text-violet-700 text-sm font-bold mb-3">
                       {item.year}
@@ -286,7 +287,7 @@ export const InstituteAbout: React.FC = () => {
           </blockquote>
           <div className="text-slate-400">
             <div className="font-bold text-white text-lg">
-              Dr. Richard Hendricks
+              Mr. Naveen Dulanjana
             </div>
             <div>Principal & Founder, WEBRAC Institute</div>
           </div>
@@ -307,10 +308,10 @@ export const InstituteAbout: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {lecturers.map((lecturer, i) => {
               const initials = lecturer.name.
-              split(' ').
-              map((n) => n[0]).
-              join('').
-              substring(0, 2);
+                split(' ').
+                map((n) => n[0]).
+                join('').
+                substring(0, 2);
               return (
                 <motion.div
                   key={lecturer.id}
@@ -329,7 +330,7 @@ export const InstituteAbout: React.FC = () => {
                     delay: i * 0.05
                   }}
                   className="group bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center">
-                  
+
                   <div className="w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br from-violet-100 to-cyan-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-xl font-bold text-violet-700">
                       {initials}
@@ -348,13 +349,13 @@ export const InstituteAbout: React.FC = () => {
                     <a
                       href={lecturer.social.linkedin}
                       className="text-slate-400 hover:text-violet-600 transition-colors">
-                      
+
                       <Linkedin className="w-4 h-4" />
                     </a>
                     <a
                       href={lecturer.social.twitter}
                       className="text-slate-400 hover:text-cyan-500 transition-colors">
-                      
+
                       <Twitter className="w-4 h-4" />
                     </a>
                   </div>
@@ -375,24 +376,24 @@ export const InstituteAbout: React.FC = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {staff.map((member, i) =>
-            <motion.div
-              key={member.id}
-              initial={{
-                opacity: 0,
-                scale: 0.95
-              }}
-              whileInView={{
-                opacity: 1,
-                scale: 1
-              }}
-              viewport={{
-                once: true
-              }}
-              transition={{
-                delay: i * 0.1
-              }}
-              className="bg-white rounded-2xl p-6 border border-slate-200 text-center">
-              
+              <motion.div
+                key={member.id}
+                initial={{
+                  opacity: 0,
+                  scale: 0.95
+                }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1
+                }}
+                viewport={{
+                  once: true
+                }}
+                transition={{
+                  delay: i * 0.1
+                }}
+                className="bg-white rounded-2xl p-6 border border-slate-200 text-center">
+
                 <h3 className="text-lg font-bold text-slate-900 mb-1">
                   {member.name}
                 </h3>
