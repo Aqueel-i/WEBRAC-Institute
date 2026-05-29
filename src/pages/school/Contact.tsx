@@ -123,7 +123,7 @@ export const SchoolContact: React.FC = () => {
                           value={formData.phone}
                           onChange={handleChange}
                           className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-pink-500/50 focus:border-pink-500 transition-all bg-slate-50 focus:bg-white"
-                          placeholder="+1 (555) 000-0000" />
+                          placeholder="+94 (70) 126-5024" />
 
                       </div>
                     </div>

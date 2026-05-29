@@ -1,28 +1,28 @@
 export const lecturers = [
 {
   id: 1,
-  name: 'Dr. Sarah Jenkins',
+  name: 'Mr. Shashika Desanjana',
   qualification: 'Ph.D. in Computer Science',
   specialization: 'Artificial Intelligence',
   social: { linkedin: '#', twitter: '#' }
 },
 {
   id: 2,
-  name: 'Prof. Michael Chen',
+  name: 'Mr.Mihin Sathsara',
   qualification: 'MSc in Data Science',
   specialization: 'Machine Learning',
   social: { linkedin: '#', twitter: '#' }
 },
 {
   id: 3,
-  name: 'Dr. Emily Rodriguez',
+  name: 'Mr. Aqueel Ishak',
   qualification: 'Ph.D. in Software Engineering',
   specialization: 'Cloud Computing',
   social: { linkedin: '#', twitter: '#' }
 },
 {
   id: 4,
-  name: 'James Wilson',
+  name: 'Mr. Naveen Dulanjana',
   qualification: 'MBA, BSc IT',
   specialization: 'IT Project Management',
   social: { linkedin: '#', twitter: '#' }
