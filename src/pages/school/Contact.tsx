@@ -9,8 +9,9 @@ import {
   Instagram,
   Youtube,
   MessageCircle,
-  CheckCircle2 } from
-'lucide-react';
+  CheckCircle2
+} from
+  'lucide-react';
 export const SchoolContact: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -25,10 +26,8 @@ export const SchoolContact: React.FC = () => {
     setIsSubmitted(true);
   };
   const handleChange = (
-  e: React.ChangeEvent<
-    HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
-
-  {
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value
@@ -59,9 +58,9 @@ export const SchoolContact: React.FC = () => {
                 x: 0
               }}
               className="bg-white p-8 md:p-10 rounded-3xl border border-slate-200 shadow-xl shadow-slate-200/50">
-              
+
               {isSubmitted ?
-              <div className="h-full flex flex-col items-center justify-center text-center py-12">
+                <div className="h-full flex flex-col items-center justify-center text-center py-12">
                   <div className="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mb-6">
                     <CheckCircle2 className="w-10 h-10 text-emerald-600" />
                   </div>
@@ -73,14 +72,14 @@ export const SchoolContact: React.FC = () => {
                     business day.
                   </p>
                   <button
-                  onClick={() => setIsSubmitted(false)}
-                  className="px-6 py-2 bg-slate-100 text-slate-700 rounded-full font-medium hover:bg-slate-200 transition-colors">
-                  
+                    onClick={() => setIsSubmitted(false)}
+                    className="px-6 py-2 bg-slate-100 text-slate-700 rounded-full font-medium hover:bg-slate-200 transition-colors">
+
                     Send another message
                   </button>
                 </div> :
 
-              <>
+                <>
                   <h2 className="text-2xl font-bold text-slate-900 mb-6">
                     Enquiry form
                   </h2>
@@ -90,14 +89,14 @@ export const SchoolContact: React.FC = () => {
                         Parent / Guardian Name *
                       </label>
                       <input
-                      required
-                      type="text"
-                      name="parentName"
-                      value={formData.parentName}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-pink-500/50 focus:border-pink-500 transition-all bg-slate-50 focus:bg-white"
-                      placeholder="Jane Doe" />
-                    
+                        required
+                        type="text"
+                        name="parentName"
+                        value={formData.parentName}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-pink-500/50 focus:border-pink-500 transition-all bg-slate-50 focus:bg-white"
+                        placeholder="Jane Doe" />
+
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                       <div>
@@ -105,27 +104,27 @@ export const SchoolContact: React.FC = () => {
                           Email *
                         </label>
                         <input
-                        required
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-pink-500/50 focus:border-pink-500 transition-all bg-slate-50 focus:bg-white"
-                        placeholder="jane@example.com" />
-                      
+                          required
+                          type="email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-pink-500/50 focus:border-pink-500 transition-all bg-slate-50 focus:bg-white"
+                          placeholder="jane@example.com" />
+
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-slate-700 mb-1.5">
                           Phone
                         </label>
                         <input
-                        type="tel"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-pink-500/50 focus:border-pink-500 transition-all bg-slate-50 focus:bg-white"
-                        placeholder="+1 (555) 000-0000" />
-                      
+                          type="tel"
+                          name="phone"
+                          value={formData.phone}
+                          onChange={handleChange}
+                          className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-pink-500/50 focus:border-pink-500 transition-all bg-slate-50 focus:bg-white"
+                          placeholder="+1 (555) 000-0000" />
+
                       </div>
                     </div>
                     <div>
@@ -133,12 +132,12 @@ export const SchoolContact: React.FC = () => {
                         Child's Age Group *
                       </label>
                       <select
-                      required
-                      name="childAge"
-                      value={formData.childAge}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-pink-500/50 focus:border-pink-500 transition-all bg-slate-50 focus:bg-white">
-                      
+                        required
+                        name="childAge"
+                        value={formData.childAge}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-pink-500/50 focus:border-pink-500 transition-all bg-slate-50 focus:bg-white">
+
                         <option value="">Select an age group</option>
                         <option value="early">Early Years (Ages 3-5)</option>
                         <option value="primary">Primary (Ages 6-10)</option>
@@ -155,19 +154,19 @@ export const SchoolContact: React.FC = () => {
                         Your message *
                       </label>
                       <textarea
-                      required
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      rows={5}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-pink-500/50 focus:border-pink-500 transition-all bg-slate-50 focus:bg-white resize-none"
-                      placeholder="Tell us about your child and what you're looking for...">
-                    </textarea>
+                        required
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        rows={5}
+                        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-pink-500/50 focus:border-pink-500 transition-all bg-slate-50 focus:bg-white resize-none"
+                        placeholder="Tell us about your child and what you're looking for...">
+                      </textarea>
                     </div>
                     <button
-                    type="submit"
-                    className="w-full py-4 bg-gradient-to-r from-pink-500 to-yellow-400 text-white rounded-xl font-medium hover:opacity-90 transition-opacity shadow-lg shadow-pink-500/25">
-                    
+                      type="submit"
+                      className="w-full py-4 bg-gradient-to-r from-pink-500 to-yellow-400 text-white rounded-xl font-medium hover:opacity-90 transition-opacity shadow-lg shadow-pink-500/25">
+
                       Send Enquiry
                     </button>
                   </form>
@@ -185,7 +184,7 @@ export const SchoolContact: React.FC = () => {
                 x: 0
               }}
               className="flex flex-col gap-8">
-              
+
               <div>
                 <h2 className="text-2xl font-bold text-slate-900 mb-6">
                   Visit us
@@ -213,10 +212,10 @@ export const SchoolContact: React.FC = () => {
                     <div>
                       <h4 className="font-semibold text-slate-900">Phone</h4>
                       <a
-                        href="tel:+15552223333"
+                        href="tel:+94701265024"
                         className="text-slate-600 hover:text-pink-600 mt-1 block">
-                        
-                        +1 (555) 222-3333
+
+                        +94 70 126 5024
                       </a>
                     </div>
                   </div>
@@ -229,13 +228,13 @@ export const SchoolContact: React.FC = () => {
                       <a
                         href="mailto:hello@webracschool.edu"
                         className="text-slate-600 hover:text-pink-600 mt-1 block">
-                        
+
                         hello@webracschool.edu
                       </a>
                       <a
                         href="mailto:admissions@webracschool.edu"
                         className="text-slate-600 hover:text-pink-600 block">
-                        
+
                         admissions@webracschool.edu
                       </a>
                     </div>
@@ -264,11 +263,11 @@ export const SchoolContact: React.FC = () => {
                 </h4>
                 <div className="flex gap-3">
                   {[Facebook, Instagram, Youtube].map((Icon, i) =>
-                  <a
-                    key={i}
-                    href="#"
-                    className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-gradient-to-br hover:from-pink-500 hover:to-yellow-400 hover:text-white transition-all">
-                    
+                    <a
+                      key={i}
+                      href="#"
+                      className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-gradient-to-br hover:from-pink-500 hover:to-yellow-400 hover:text-white transition-all">
+
                       <Icon className="w-5 h-5" />
                     </a>
                   )}
@@ -297,7 +296,7 @@ export const SchoolContact: React.FC = () => {
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg shadow-green-500/30 hover:scale-110 transition-transform"
         aria-label="Chat on WhatsApp">
-        
+
         <MessageCircle className="w-7 h-7" />
       </a>
     </div>);
